@@ -3,75 +3,79 @@
 
 int main()
 {
-    // 抽象工厂
+    //// 抽象工厂
     //TestAbstractFactory();
 
-    // 生成器
+    //// 生成器
     //TestBuilder();
 
-    // 工厂方法
+    //// 工厂方法
     //TestFactoryMethod();
 
     // 原型
-    //TestPrototype();
+    TestPrototype();
+
+
+    system("pause");
+    return 0;
 
     // 单例
-    //TestSingleton();
+    TestSingleton();
 
     // 适配器
-    //TestAdapter();
+    TestAdapter();
 
     // 桥接
-    //TestBridge();
+    TestBridge();
 
     // 组合
-    //TestComposite();
+    TestComposite();
 
     // 装饰
-    //TestDecorator();
+    TestDecorator();
 
     // 外观
-    //TestFacade();
+    TestFacade();
 
     // 享元
-    //TestFlyWeight();
+    TestFlyWeight();
 
     // 代理
-    //TestProxy();
+    TestProxy();
 
     // 职责链
-    //TestChainOfResponsibility();
+    TestChainOfResponsibility();
 
     // 命令
-    //TestCommand();
+    TestCommand();
 
     // 解释器
-    //TestInterpreter();
+    TestInterpreter();
 
     // 迭代器
-    //TestIterator();
+    TestIterator();
 
     // 中介者
-    //TestMediator();
+    TestMediator();
 
     // 备忘录
-    //TestMemento();
+    TestMemento();
 
     // 观察者
-    //TestObserver();
+    TestObserver();
 
     // 状态
-    //TestState();
+    TestState();
 
     // 策略
-    //TestStrategy();
+    TestStrategy();
 
     // 模板方法
-    //TestTemplateMethod();
+    TestTemplateMethod();
 
     // 访问者
     TestVisitor();
 
-    system("pause");
+    return 0;
 }
 

@@ -3,10 +3,21 @@
 /**
  * @brief 抽象工厂
  * 分类: 创建型(对象)
+ * 意图:
  * 提供一个创建一系列相关或相互依赖对象的接口，
  * 而无需制定他们具体的类。
+ * 适用性:
+ * 1. 一个系统要独立于它的产品的创建，组合和表示时
+ * 2. 一个系统要由多个产品系列中的一个来配置时
+ * 3. 当你要强调一系列相关的产品对象的设计以便进行联合使用时
+ * 4. 当你提供一个产品类库，而只想显示它们的接口而不是实现时
 */
 
+
+/**
+ * @brief AbstractProduct
+ * 为一类产品对象声明一个接口
+*/
 class Chair
 {
 public:
@@ -14,6 +25,11 @@ public:
     virtual void sitOn() const = 0;
 };
 
+/**
+ * @brief ConcreteProduct
+ * 定义一个将被相应的具体工厂创建的产品对象
+ * 实现AbstractProduct接口
+*/
 class ModernChair :public Chair
 {
 public:
@@ -57,6 +73,10 @@ public:
     }
 };
 
+/**
+ * @brief AbstractFactory
+ * 声明一个创建抽象产品对象的操作接口
+*/
 class FurnitureFactory
 {
 public:
@@ -64,6 +84,10 @@ public:
     virtual Table* createTable() const = 0;
 };
 
+/**
+ * @brief ConCreteFactory
+ * 实现创建具体产品对象的操作
+*/
 class ModernStyleFactory :public FurnitureFactory
 {
 public:
@@ -86,6 +110,10 @@ public:
     }
 };
 
+/**
+ * @brief Client
+ * 仅使用AbstractFactory和AbstractProduct类声明的接口
+*/
 class Client
 {
     FurnitureFactory* m_factory;
